@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade — SayPlay</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #0a0f1e;
+            color: #cbd5e1;
+            line-height: 1.75;
+            min-height: 100vh;
+        }
+
+        /* Background orbs */
+        body::before, body::after {
+            content: '';
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        body::before {
+            width: 500px; height: 500px;
+            background: rgba(29, 185, 84, 0.12);
+            top: -100px; left: -100px;
+        }
+        body::after {
+            width: 400px; height: 400px;
+            background: rgba(56, 189, 248, 0.10);
+            bottom: -80px; right: -80px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        .logo-icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, #1DB954, #0ea5e9);
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 8px 32px rgba(29, 185, 84, 0.3);
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #1DB954, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 2px;
+        }
+
+        /* Cards */
+        .card {
+            background: rgba(15, 23, 42, 0.75);
+            border: 1px solid rgba(56, 189, 248, 0.18);
+            border-radius: 20px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .card h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h2 .icon {
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            font-size: 15px;
+            color: #94a3b8;
+            padding: 6px 0 6px 20px;
+            position: relative;
+        }
+
+        .card ul li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: #1DB954;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: rgba(29, 185, 84, 0.08);
+            border: 1px solid rgba(29, 185, 84, 0.25);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #86efac;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(29, 185, 84, 0.15);
+            color: #4ade80;
+            border: 1px solid rgba(29, 185, 84, 0.3);
+            border-radius: 999px;
+            padding: 2px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(56, 189, 248, 0.15);
+            text-align: center;
+            font-size: 13px;
+            color: #475569;
+        }
+
+        a { color: #38bdf8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="logo-icon">🎵</div>
+        <div>
+            <h1>SayPlay</h1>
+            <p>Política de Privacidade &nbsp;·&nbsp; Última atualização: Fevereiro de 2025</p>
+        </div>
+    </header>
+
+    <div class="card">
+        <h2><span class="icon">📋</span> Visão Geral</h2>
+        <p>
+            O SayPlay é um aplicativo de geração de playlists por Inteligência Artificial. Ao descrever ou sussurrar uma vibe, o app gera automaticamente uma playlist personalizada e a envia para a sua conta Spotify.
+        </p>
+        <p>
+            Esta política descreve quais dados coletamos, como os usamos e quais são seus direitos. Ao usar o SayPlay, você concorda com estas práticas.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">🎤</span> Microfone e Áudio</h2>
+        <p>O SayPlay pode solicitar acesso ao microfone do seu dispositivo. Este acesso é usado exclusivamente para:</p>
+        <ul>
+            <li>Capturar sua descrição de voz da playlist desejada</li>
+            <li>Enviar o áudio temporariamente à API Gemini (Google) para processamento</li>
+        </ul>
+        <div class="highlight">
+            🔒 Nenhuma gravação de áudio é armazenada permanentemente. Os dados de voz são processados em tempo real e descartados imediatamente após a geração da playlist.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">🎧</span> Integração com Spotify</h2>
+        <p>O SayPlay se conecta à sua conta Spotify via OAuth 2.0 para:</p>
+        <ul>
+            <li>Identificar sua conta (nome de usuário e ID)</li>
+            <li>Criar playlists em seu nome</li>
+            <li>Adicionar músicas às playlists criadas</li>
+        </ul>
+        <p>
+            O token de acesso do Spotify é armazenado localmente no seu dispositivo e nunca é enviado para servidores do SayPlay. Você pode revogar o acesso a qualquer momento nas configurações do Spotify.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">🤖</span> Inteligência Artificial (Google Gemini)</h2>
+        <p>O SayPlay utiliza a API Gemini do Google para interpretar sua vibe e gerar listas de músicas. Os dados enviados incluem:</p>
+        <ul>
+            <li>Texto descritivo da playlist (o que você digita)</li>
+            <li>Áudio de voz (quando você usa o microfone), enviado criptografado</li>
+        </ul>
+        <p>
+            Consulte a <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a> para entender como a API Gemini trata seus dados.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">📱</span> Dados Armazenados Localmente</h2>
+        <p>O SayPlay armazena no seu dispositivo (sem enviar a servidores externos):</p>
+        <ul>
+            <li>Token de autenticação do Spotify</li>
+            <li>Saldo de Play Coins (moedas virtuais)</li>
+            <li>Data e hora do último crédito de moedas</li>
+            <li>Cache temporário de resultados de busca do Spotify</li>
+        </ul>
+        <div class="highlight">
+            🛡️ Nenhum dado pessoal identificável é coletado ou transmitido para servidores próprios do SayPlay.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">📺</span> Anúncios (Google AdMob) <span class="badge">AdMob</span></h2>
+        <p>O SayPlay exibe anúncios intersticiais e premiados fornecidos pelo Google AdMob. O AdMob pode coletar:</p>
+        <ul>
+            <li>Identificadores de dispositivo (ID de publicidade)</li>
+            <li>Dados de localização aproximada (se permitido)</li>
+            <li>Informações de interação com anúncios</li>
+        </ul>
+        <p>
+            Você pode desativar anúncios personalizados nas configurações do seu dispositivo Android em <strong>Configurações → Privacidade → Anúncios</strong>. Consulte a <a href="https://policies.google.com/technologies/ads" target="_blank">Política de Anúncios do Google</a> para mais detalhes.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">🍪</span> Play Coins (Moedas)</h2>
+        <p>
+            O sistema de Play Coins é uma funcionalidade interna do app. As moedas são armazenadas exclusivamente no banco de dados local do seu dispositivo e controlam o uso de recursos de IA. Nenhuma informação financeira é coletada ou processada.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">👶</span> Crianças</h2>
+        <p>
+            O SayPlay não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente dados de menores. Se você acredita que uma criança nos forneceu dados, entre em contato para que possamos removê-los.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2><span class="icon">✉️</span> Contato</h2>
+        <p>Para dúvidas, solicitações ou remoção de dados, entre em contato:</p>
+        <ul>
+            <li>E-mail: <a href="mailto:contato@sayplay.app">contato@sayplay.app</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        © 2025 SayPlay. Todos os direitos reservados.<br />
+        Esta política pode ser atualizada periodicamente. Verifique esta página para mudanças.
+    </footer>
+
+</div>
+</body>
+</html>
